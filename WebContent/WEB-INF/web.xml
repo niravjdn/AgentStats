@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+    <display-name>stats_project</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>showdataPROD.jsp</servlet-name>
+        <jsp-file>/showdataPROD.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showdataPROD.jsp</servlet-name>
+        <url-pattern>/showdataPROD/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showdataYcom.jsp</servlet-name>
+        <jsp-file>/showdataYcom.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showdataYcom.jsp</servlet-name>
+        <url-pattern>/showdataYcom/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showdataYcomGraph.jsp</servlet-name>
+        <jsp-file>/showdataYcomGraph.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showdataYcomGraph.jsp</servlet-name>
+        <url-pattern>/showdataYcomGraph/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showdataPRODGraph.jsp</servlet-name>
+        <jsp-file>/showdataPRODGraph.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showdataPRODGraph.jsp</servlet-name>
+        <url-pattern>/showdataPRODGraph/*</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
